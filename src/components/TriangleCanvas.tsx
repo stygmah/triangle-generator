@@ -6,7 +6,7 @@ interface Point {
   y: number;
 }
 
-const DraggablePoints: React.FC = () => {
+const TriangleCanvas: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [points, setPoints] = useState<Point[]>([
     { x: 50, y: 250 },
@@ -89,4 +89,4 @@ const DraggablePoints: React.FC = () => {
   );
 };
 
-export default DraggablePoints;
+export default TriangleCanvas;
